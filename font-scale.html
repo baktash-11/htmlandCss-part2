@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font-scale</title>
+    <link rel="stylesheet" href="./css/next.css">
+    <style>
+        .flexbox-item{
+            color: #fde3e381;
+        }
+    </style>
+</head>
+<body>
+    <!-- 12px scale  -->
+    <div class="container">
+        <div class="flexbox-item box1-b">
+            <h1 class="heading main-heading">PIXELS</h1>
+            <h2 class="heading secondary-heading">
+                TWELVE PIXEL SCALE
+            </h2>
+            <div class="inner-container">
+                <div class="inner-item1">
+                    <p>h1</p>
+                    <p>h2</p>
+                    <p>h2</p>
+                    <p>body</p>
+                </div>
+                <div class="inner-item2">
+                    <p>24px</p>
+                    <p>18px</p>
+                    <p>14px</p>
+                    <p>12px</p>
+                </div>
+
+            </div>
+        </div>
+
+        
+        <div class="flexbox-item box2-b">
+            <h1 class="heading main-heading">PERCENTAGES</h1>
+            <h2 class="heading secondary-heading">
+                TWELVE PIXEL SCALE
+            </h2>
+            <div class="inner-container">
+                <div class="inner-item1">
+                    <p>h1</p>
+                    <p>h2</p>
+                    <p>h2</p>
+                    <p>body</p>
+                </div>
+                <div class="inner-item2">
+                    <p>200%</p>
+                    <p>150%</p>
+                    <p>117%</p>
+                    <p>75%</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="flexbox-item box3-b">
+            <h1 class="heading main-heading">EMS</h1>
+            <h2 class="heading secondary-heading">
+                TWELVE PIXEL SCALE
+            </h2>
+            <div class="inner-container">
+                <div class="inner-item1">
+                    <p>h1</p>
+                    <p>h2</p>
+                    <p>h2</p>
+                    <p>body</p>
+                    <p>p</p>
+                    
+                </div>
+                <div class="inner-item2">
+                    <p>1.5em</p>
+                    <p>1.3</p>
+                    <p>1.17em</p>
+                    <p>100%</p>
+                    <p>0.75em</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        
+    </div>
+    <!-- 16px scale -->
+    <div class="container">
+        <div class="flexbox-item box1-b">
+            <h1 class="heading main-heading">PIXELS</h1>
+            <h2 class="heading secondary-heading">
+                SIXTEEN PIXEL SCALE
+            </h2>
+            <div class="inner-container">
+                <div class="inner-item1">
+                    <p>h1</p>
+                    <p>h2</p>
+                    <p>h2</p>
+                    <p>body</p>
+                </div>
+                <div class="inner-item2">
+                    <p>32px</p>
+                    <p>24px</p>
+                    <p>28px</p>
+                    <p>16px</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="flexbox-item box2-b">
+            <h1 class="heading main-heading">PERCENTAGES</h1>
+            <h2 class="heading secondary-heading">
+                SIXTEEN PIXEL SCALE
+            </h2>
+            <div class="inner-container">
+                <div class="inner-item1">
+                    <p>h1</p>
+                    <p>h2</p>
+                    <p>h2</p>
+                    <p>body</p>
+                </div>
+                <div class="inner-item2">
+                    <p>200%</p>
+                    <p>150%</p>
+                    <p>133%</p>
+                    <p>100%</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="flexbox-item box3-b">
+            <h1 class="heading main-heading">EMS</h1>
+            <h2 class="heading secondary-heading">
+                SIXTEEN PIXEL SCALE
+            </h2>
+            <div class="inner-container">
+                <div class="inner-item1">
+                    <p>h1</p>
+                    <p>h2</p>
+                    <p>h2</p>
+                    <p>body</p>
+                    <p>p</p>
+                    
+                </div>
+                <div class="inner-item2">
+                    <p>1.2em</p>
+                    <p>1.5em</p>
+                    <p>1.125em</p>
+                    <p>100%</p>
+                    <p>1em</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+    </div>
+    <br>
+    <div class="container">
+        <div class="flexbox-item box1">
+            <p>
+                Setting font size in pixels is the best way to ensure that the type appears at the size you intended (because percentages and ems are more likely to vary if a user has changed the default size of text in their browser).
+
+            </p>
+            <br>
+            <p>
+                Pixels are relative to the resolution of the screen, so the same type size will look larger when a screen has a resolution of 800 x 600 than it would when its 1280 x 800.
+            </p>
+            <br>
+            <p>
+                You can also use pt for point size instead of px for pixels, but you should only do this when creating style sheets for printer-friendly version of pages.
+            </p>
+           
+
+        </div>
+        <div class="flexbox-item box2">
+            <p>
+                The default size of text ina web browser is 16px. Using percentage of this amount, you can create a scale where the default text size is 12px, and headings are size in relation to this.
+            </p>
+            <br>
+            <p>
+                It's possible for user to change the default size of text in their web browsers. If they have done this, the fonts will be displayed at the same scale that the designer intended, but at the larger or smaller size.
+            </p>
+            
+        </div>
+        <div class="flexbox-item box3">
+            <p>
+                Ems allow you to change the size of text relative to the size of the text in the parent element. Since the default size of text in web browser is 16px, you can user similar rules to those show for percentages.
+            </p><br>
+            <p>
+                Because users can change the default size of text in their browser, the font could all appear larger(or smaller) than the designer intended.
+            </p>
+            <br>
+            <p>
+                The extra p rule above is to help Browsers display the fonts at the right size.
+
+            </p>
+            <p>
+                Without this extra rule, browsers exaggerate the relative size of other text.
+            </p>
+        </div>
+    </div>
+    
+    <a href="./index.html" class="link">Home</a>
+    <a href="./next-font-size.html" class="link">Back</a>
+</body>
+</html>

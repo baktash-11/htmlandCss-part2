@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* *{
+            font-family: Arial, Helvetica, sans-serif ;
+            
+        } */
+        body{
+            
+            margin-left: 5%;
+            
+            width: 80%;
+        }
+       
+
+        h1{
+            font-family: "Courier New" , monospace;
+            color: black;
+        }
+        i{
+            color:green;
+        }
+        i{
+            color:red;
+        }
+        /* b{
+            
+            background-color: greenyellow;
+        } */
+        p b {
+            color: blue !important;
+        }
+        p b{
+            color: violet;
+        }
+        p#intro{
+            font-size: 100%;
+        }
+        p{
+            font-size: 75%;
+        }
+        
+       
+    </style>
+    <link rel="stylesheet" href="./css/two-column-layout.css">
+    <title>Cascade</title>
+</head>
+<body>
+    <div class="row">
+
+        
+        <div class="main-body">
+            <h1 class="main-heading">Examples</h1>
+            <h1 class="">Potatoes</h1>
+            <p id="intro">There are <i>dozens</i>of different <b>potato</b>varieties.</p>
+            <p>They are usually described as early, second early  and main crop potatoes.</p>
+
+        </div >
+        <div class="notes" >
+            <h1 class="main-heading">Notes</h1>
+            <div class="cell-1">
+                If there are two or more rules
+                that apply to the same element,
+                it is important to understand
+                which will take precedence.
+
+            </div>
+           
+           
+            <div class="cell-2">
+                <h2 class="secondary-heading">LAST RULE</h2>
+                f the two selectors are identical, the latter of
+                 the two will take precedence. Here you can see
+                the second i selector takes precedence over the 
+                first.
+            </div>
+
+            <div class="cell-1">
+                <h2 class="secondary-heading">SPECIFICITY</h2>
+                If one selector is more specific than the other, 
+                others, the more specific rule will take 
+                precedence over more general  ones. In this Example 
+                <br>
+                h1 is more specific than * <br>
+                p b is more specific than p <br>
+                P#intro is more specific than p
+
+
+            </div>
+            <div class="cell-2">
+                <h2 class="secondary-heading">IMPORTANT</h2>
+               You can add !important after any property value 
+               to indicate that it should be considered more
+               important than others rules that apply to the 
+               element.
+
+            </div>
+
+        </div>
+        
+    </div>
+    <a class="link" href="./index.html">Home</a>
+</body>
+</html>

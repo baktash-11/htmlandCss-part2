@@ -1,0 +1,138 @@
+:root{
+   
+    --secondary-text-color: #fde3e381; 
+    --main-text-color: #f7f7f2; 
+    --dark-background: #141e22; 
+    --side-box-text: #f98903;
+    --main-background-color: #260c1a;
+    --gradient-background-1:radial-gradient(circle at 10% 20%, rgb(239, 246, 249) 0%, rgb(206, 239, 253) 90%);
+    --gradient-background-2:linear-gradient(111.1deg, rgb(0, 40, 70) -4.8%, rgb(255, 115, 115) 82.7%, rgb(255, 175, 123) 97.2%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+ a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    padding-top: 4%;
+    width: 70%;
+    margin: auto;
+    background:  var(--main-background-color);
+    align-items: center;
+    height: 2000px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.flexbox-item{
+    margin: 10px;
+    font-size: 22px;
+    color: var(--main-text-color);
+    padding: 1%;
+    margin-bottom: 4%;
+    line-height: 1.5em;
+
+
+}
+
+.box1{
+    width: 33%;
+    
+    
+}
+.box2{
+    width: 33%;
+    
+
+}
+.box3{
+    width: 33%;
+    color: var(--side-box-text);
+    margin-left: 2%;
+    
+
+}
+.box1-b{
+    width: 33%;
+   
+    
+}
+.box2-b{
+    width: 33%;
+ 
+
+}
+.box3-b{
+    width: 33%;
+   
+    
+
+}
+.heading{
+    color: var(--secondary-text-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main-heading{
+    font-size: 30px;
+    color: var(--side-box-text);
+    text-align: center;
+}
+.secondary-heading{
+    background: var(--secondary-text-color);
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 22PX;
+    border-radius:10PX;
+    color: var(--dark-background);
+    margin: 10px 0;
+    margin-bottom: 20px;
+        
+}
+.link{
+    color: var(--main-text-color);
+    border: 1px solid var(--main-background-color);
+    border-bottom: 2px solid var(--side-box-text);
+    border-radius: 10px;
+    padding: 10px 30px;
+    padding-bottom: 10px;
+    transition: 2s;
+    margin: 10px 20px;
+    font-weight: bolder;
+   
+    
+}
+.link:hover{
+    color: var(--side-box-text);
+    border: 1px solid var(--secondary-text-color);
+    border-bottom: 2px solid var(--main-text-color);
+    background-color: #172C3D;
+    border-radius: 10px;
+}
+
+.inner-container{
+    border: 2px solid var(--secondary-text-color);
+    border-radius: 10px;
+    display: flex;
+    color: var(--secondary-text-color);
+}
+.inner-item1{
+    width: 50%;
+    padding: 20PX 10PX ;
+    text-align: center;
+}
+.inner-item2{
+    width: 50%;
+    padding: 20PX 10PX ;
+    text-align: center;
+    
+}

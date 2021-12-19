@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-selectors</title>
+
+    <style>
+        body{
+            width: 90%;
+            margin: auto;
+            background-color: whitesmoke;
+            /* border: solid 1px greenyellow; */
+        }
+        table{
+            width: 100%;
+        }
+        td:first-child{
+            color: lightcoral;
+            border-right: 0;
+            width: 20%;
+            background-color: lightyellow;
+        }
+        tr:first-child{
+            color: white;
+            background-color: lightskyblue;
+        }
+        td, th{
+            border: 1px solid lightskyblue;
+            height: 30px;
+            text-align: center;
+            padding: 5px;
+        }
+        td{
+            border-top: 0;
+            border-right: 0;
+            background-color: white;
+        }
+        td:last-child{
+            border-right: 1px solid lightskyblue;
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="top">Kitchen Garden Calendar</h1>
+    <p id="introduction">Here you can read our
+        handy guide about what to do when.</p>
+    <h2>Spring</h2>
+    <ul>
+        <li><a href="mulch.html">
+                Spring mulch vegetable beds</a></li>
+        <li><a href="potato.html">
+                Plant out early potatoes</a></li>
+        <li><a href="tomato.html">
+                Sow tomato seeds</a></li>
+        <li><a href="beet.html">
+                Sow beet seeds</a></li>
+        <li><a href="zucchini.html">
+                Sow zucchini seeds</a></li>
+        <li><a href="rhubarb.html">
+                Deadhead rhubarb flowers</a></li>
+        <li><a href="./cascade.html">
+                    Cascade </a></li>
+        <li><a href="./inheritance.html">
+                    Inheritance </a></li>
+        <li><a href="./typeface.html">TYPEFACE</a></li>
+        
+        <li><a href="./flex.html">FLEXBOX</a></li>
+
+        
+        <li><a href="./font-size.html">FONT-SIZE</a></li>
+        <li><a href="./dom.html">DOM</a></li>
+    </ul>
+
+    <p class="note">
+        This page was written by
+        <a href="mailto:ivy@example.org">
+            ivy@example.org</a> for
+        <a href="http://www.example.org">Example</a>.
+
+    </p>
+    <table   >
+        <tr>
+            
+            <th>SELECTOR</th>
+            <th>SELECTOR</th>
+            <th>SELECTOR</th>
+            
+        </tr>
+        <tr>
+            <td>UNIVERSAL SELECTOR </td>
+            <td>Applies to all element in the document</td>
+            <td> * {} <br>Targets all elements on the page</td>
+        </tr>
+        <tr>
+            <td>TYPE SELECTOR</td>
+            <td>Matches element names</td>
+            <td>h1, h2, h3{} <br>Targets the Element &lt;h1&gt; &lt;h2&gt; &lt;h3&gt; elements.</td>
+        </tr>
+        <tr>
+            <td>CLASS SELECTOR</td>
+            <td>Matches an element whose class attribute has a value that matches the one specified after the period (or full stop) symbol</td>
+        
+            <td>.not{} <br> Targets any element whose class attribute has a value of note <br> p.note{} Target only &lt;p&gt; elements whose class attribute has a value of note</td>
+        </tr>
+        <tr>
+            <td>ID SELECTOR </td>
+            <td>Matches an element whose id attribute has a value that matches the one specified after the pound or hash symbol</td>
+            <td>#introduction {} <br> Targets the element whose id attribute has a value of introduction</td>
+        </tr>
+        <tr>
+            <td>CHILD SELECTOR</td>
+            <td>Matches an element that is direct child of another!</td>
+            <td>li&gt;a {} <br>Targets any &lt;a&gt; elements that are children of an &lt;li&gt; element (but not other &lt;a&gt; elements in the page)</td>
+        
+        </tr>
+        <tr>
+            <td>ADJACENT SIBLING SELECTOR</td>
+            <td>Matches an element that is the next sibling of another</td>
+            <td>h1+p {} <br>Targets the first &lt;p&gt; element after any &lt;h1&gt; element(but not other &lt;p&gt; elements)</td>
+        </tr>
+        <tr>
+            <td>DESCENDANT SELECTOR</td>
+            <td>Matches an element that is a descendant of another specified element (not just a direct child of that element)</td>
+            <td>p a {} <br> Targets any &lt;a&gt; elements that set inside a &lt;p&gt; element, even if there are other elements nested between them.</td>
+        </tr>
+        <tr>
+            <td>GENERAL SIBLING SELECTOR</td>
+            <td>Matches an element that is a  sibling of another, although it does not have to be the directly preceding element</td>
+            <td>h1~p {} <br>If you had two &lt;p&gt; elements that are siblings of an &lt;h1&gt; element, this rule would apply to both.</td>
+        </tr>
+        
+    </table>
+    <p>
+        <a href="#top">Top of page</a><br>
+        <a href="https://www.csscolorpalettes.com/" target="blank">SheCodes coding tools</a>
+    </p>
+
+</body>
+
+</html>
