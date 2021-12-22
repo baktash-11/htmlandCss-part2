@@ -346,23 +346,231 @@
     </div>
 
     <br><br>
-    <hr>
-    <h1 class="main-heading ">empty template</h1>
-    <h2 class="table-heading right">empty template</h2>
+    <style>
+        p.one {
+            background-color: #eeeeee;
+            color: #666666;
+            text-shadow: 1px 1px 0px #000000;
+            padding-top: 20px;
+            
+        }
+    
+        p.two {
+            background-color: #dddddd;
+            color: #525151;
+            text-shadow: 1px 1px 3px #666666;
+        }
+    
+        p.three {
+            background-color: #cccccc;
+            color: #ffffff;
+            text-shadow: 2px 2px 7px #000000;
+        }
+    
+        p.four {
+            background-color: #bbbbbb;
+            color: #cccccc;
+            text-shadow: -1px -2px #666666;
+        }
+    
+        p.five {
+            background-color: #aaaaaa;
+            color: #ffffff;
+            text-shadow: -1px -1px #666666;
+        }
+        .one, .two, .three, .four, .five{
+            font-size: 20px;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px;
+            margin-left: 0;
+        }
+    </style>
+
+    <a href="#end-of-page" class="section-of-the-page">End of the Page</a>
+    <h1 class="main-heading ">css3: drop shadow</h1>
+    <h2 class="table-heading right">text-shadow</h2>
 
     <div class="main-two-c-container">
         <div class="main-body-2">
             <pre class="line-numbers code">
-                <code class="language-css">
-                    mepty
-                </code>
-                
+            <code class="language-css">
+            p.one {
+                background-color: #eeeeee;
+                color: #666666;
+                text-shadow: 1px 1px 0px #000000;
+            }
+            p.two {
+                background-color: #dddddd;
+                color: #666666;
+                text-shadow: 1px 1px 3px #666666;
+            }
+            p.three {
+                background-color: #cccccc;
+                color: #ffffff;
+                text-shadow: 2px 2px 7px #111111;
+            }
+            p.four {
+                background-color: #bbbbbb;
+                color: #cccccc;
+                text-shadow: -1px -2px #666666;
+            }
+            p.five {
+                background-color: #aaaaaa;
+                color: #ffffff;
+                text-shadow: -1px -1px #666666;
+            }
+            </code>    
             </pre>
-            MAIN BODY!
+    
+            <div clas   s="main-body">
+                <p class="one">You call it madness, but I call it CODING</p>
+                <p class="two">You call it madness, but I call it CODING</p>
+                <p class="three">You call it madness, but I call it CODING</p>
+                <p class="four">You call it madness, but I call it CODING</p>
+                <p class="five">You call it madness, but I call it CODING</p>
+            </div>  
         </div>
         <div class="note-1 left">
             <div class="item">
-                empty
+                <p>
+                    It is used to create a drop shadow, which is a dark version of the word just behind it and slightly offset. It can also be used to create an embossed effect by adding a shadow that is slightly lighter than the text.
+                </p>
+                <p>
+
+                </p>
+                
+            </div>
+            <div class="item">
+                <p>
+                    The value of this property is quite complicated because it can take three lengths and a color for the drop shadow.
+                </p>
+                
+                
+            </div>
+            <ol>
+                <li>The first length indicates how far to the left or right the shadow should fall.
+
+                </li>
+                <li>
+                    The second value indicates the distance to the top or bottom that the shadow should fall.
+                </li>
+                <li>
+                    The third value is optional and specifies the amount of blur that should be applied to the drop shadow.
+                </li>
+                <li>
+                    The fourth value is the color of the drop shadow.
+                </li>
+            </ol>
+            <div class="item end-notes">
+                The text-shadow property has become very popular but at the time of writing it  not supported in any versions of Internet Explorer (currently IE9). Other browser makers introduced it in Firefox 3.1, Safari 3, Chrome 2 and Opera 9.5.
+            </div>
+        </div>
+        
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+    <style>
+        p.intro:first-letter{
+            font-size: 2em;
+        }
+        p.intro:first-line{
+            font-weight: bolder;
+            /* color:lightseagreen; */
+        }
+        #first-letter{
+            padding-top: 50px;
+        }
+    </style>
+    <h1 class="main-heading ">frist letter or line</h1>
+    <h2 class="table-heading right">:frist-letter,  :frist-line</h2>
+    <div class="main-two-c-container">
+        <div class="main-body-2">
+            <pre class="line-numbers code">
+                <code class="language-css">
+                    p.intro:first-letter{
+                        font-size: 2em;
+                    }
+                    p.intro:first-line{
+                        font-weight: bolder;
+                    }
+                </code>
+                
+            </pre>
+            <div class="main-body">
+                <h1 id="first-letter">Heading</h1><br>
+                <p>by Baktash Sana</p><br>
+                <p class="intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus amet architecto vitae expedita libero dolore provident natus suscipit odio id.</p>
+                <h2 id="first-letter">History and Background</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptas nisi ratione similique. Aliquid ea provident aut recusandae rem nihil tempore consequatur, et tenetur harum minima perferendis reiciendis obcaecati architecto voluptatum mollitia alias saepe voluptates earum eligendi dolores dignissimos suscipit optio! Nihil blanditiis minus impedit inventore voluptatibus nisi est sint, soluta eius cupiditate consectetur expedita?</p> <br>
+                <p class="intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quo odio facilis ad at, iusto incidunt eius eos quidem, officiis magnam voluptatum placeat doloribus recusandae ipsam sit vel et? Quaerat corporis quibusdam ullam tempora a quod natus! Hic illum ipsa perspiciatis, obcaecati provident similique rerum deleniti nihil eligendi sit! Vel perspiciatis dolorem laboriosam suscipit quibusdam magni repellat quae atque aut.</p>
+            </div>
+        </div>
+
+        <div class="note-1 left">
+            <div class="item">
+                <p>
+                    We can specify different values of the first letter or first line of text inside an element using.
+                </p>
+                <br>
+                <p>
+                    :frist-letter and
+                </p>
+                <p>
+                    :first-line.
+                </p>
+               
+                
+            </div>
+            <div class="item">
+                <p>
+                    Technically these are not properties, They are know as <strong>pseudo-elements.</strong> 
+                </p>.
+                <br>
+                <p>
+                    We specify the pseudo-element at the end of the selector, and then specify the declaration as you would normally for any other element.
+                </p>
+                
+            </div>
+            <div class="item end-notes">
+                <p>
+                    It is worth trying this example in your browser so that you can see how the first-line pseudoelement will only affect the first line of text, even if you resize your browser window and less or more words appear on each line.
+                </p> <br>
+          
+                <p>
+                    CSS introduces both pseudoelements and pseudo-classes. A pseudo-element acts like an extra element is in the code. In the case of the :first-letter and :first-line pseudo elements, it is as if there is an extra element around the first letter or the first line which can have its own styles applied.
+
+                </p>
+                <p><br>
+                    A pseudo-class acts like an extra value for a class attribute. In the case of the :visited pseudo-class, which you meet on the next page, it allows you to have different styles for links that have been visited. Similarly, the :hover pseudo-class allows you to style elements differently when a user hovers over them.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+    <br><br>
+    <hr>
+    <br><br>
+    <h1 class="main-heading ">Empty template</h1>
+    <h2 class="table-heading right">Empty template</h2>
+    <div class="main-two-c-container">
+        <div class="main-body-2">
+            <pre class="line-numbers code">
+                <code class="language-css">
+                    Code Template(column 1)
+                </code>
+                
+            </pre>
+            <div class="main-body">
+                <h1>Template (column 1)</h1>
+            </div>
+        </div>
+
+        <div class="note-1 left">
+            <div class="item">
+                Side bar template(column 2)
                 
             </div>
         </div>
