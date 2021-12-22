@@ -168,11 +168,11 @@
             </div>
 
         </div>
-
+       
     
 
     </div>
-
+    <a href="#end-of-page" class="section-of-the-page">End of the Page</a>
     <style>
         #sex-months{
             vertical-align: text-top;
@@ -271,6 +271,20 @@
 
     <br><br><br>
 
+    <div id="indent"></div>
+    <style>
+        #indent-text{
+            background-image: url("assets/images/bg.png");
+            background-repeat: no-repeat;
+            text-indent: -999px;
+            padding: 100px;
+            margin: 10px;
+        }
+        .credit{
+            text-indent: 20px;
+            padding-bottom: 10px;
+        }
+    </style>
 
     <h1 class="main-heading ">indenting text</h1>
     <h2 class="table-heading right">text-indent</h2>
@@ -279,22 +293,59 @@
         <div class="main-body-2">
         <pre class="line-numbers code">
         <code class="language-css">
-        
+            #indent-text{
+                background-image: url("assets/images/bg.png");
+                background-repeat: no-repeat;
+                text-indent: -9999px;
+                
+            }
+            .credit{
+                text-indent: 20px;
+            }
         </code>
                 
-            </pre>
-            MAIN BODY!
+        </pre>
+            <div class="main-body">
+                <br>
+                <h2 class="secondary-heading right">Result</h2>
+                <h1 id="indent-text">Indented h1 hs been moved to right</h1>
+                <p class="credit">Baktash Sana</p>
+
+                <p>Lorem <a href="">, dolor</a>  sit amet consectetur adipisicing elit. Qui, eaque enim id aut incidunt nam repellat similique possimus illo neque!</p>
+                <br>
+                <h2>History and Background!</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque hic cum ratione aspernatur temporibus incidunt fuga quia similique, deleniti eius facere molestias dolorem excepturi nobis quos fugiat dolorum odit qui magnam? Consectetur aspernatur ab veniam quis voluptate labore, repellat mollitia natus sunt explicabo rem eveniet, quia, excepturi vel cupiditate error tempora. Similique assumenda ipsam eos sint at dolorem vero animi?</p>
+
+            </div>
         </div>
+
+
         <div class="note-1 left">
             <div class="item">
-                empty
-                
+                <p>
+                    The text-indent property allows you to indent the first line of text within an element. The amount you want the line indented by can be specified in a number of ways but is usually given in pixels or ems
+                </p>
+
+            </div>
+            <div class="item">
+                <p>
+                    It can take a negative value, which means it can be used to push text off the browser window. You can see this technique used in this example, where the &lt;h1> element uses a background image to represent the heading. The text has been moved far to the left, off the screen. (Background images are covered on pages 413-418.)
+                </p>
+            </div>
+            <div class="item">
+                <p>
+                    We still want the heading text to be on the page (for search engines and those who cannot see the image), but we cannot have it displayed on top of the logo or it will be unreadable. By pushing it 9,999 pixels to the left, it is way out of sight but still in the HTML code.
+                </p>
+                <p>
+                    The econd rule in the example indents the credits 20 pixels to the right.
+                </p>
             </div>
         </div>
         
     </div>
 
-
+    <br><br>
     <hr>
     <h1 class="main-heading ">empty template</h1>
     <h2 class="table-heading right">empty template</h2>
@@ -317,14 +368,17 @@
         </div>
         
     </div>
+    <div id="end-of-page"></div>
 
+    <a href="#top" class="section-of-the-page">Top of the page</a>
+    <a href="#indent" class="section-of-the-page">Topic Indent Text</a>
     <br>
     <a href="./index.html" class="link">Home</a>
     <a href="./font-scale.html" class="link">Back</a>
     <a href="./typeface.html" class="link">Type Face</a>
     <a href="./understanding-font-fontmats.html" class="link">font format</a>
-    <br><br><br>
-    <a href="#top" class="section-of-the-page">Top of the page</a>
+    
+    <br>
     <br>
 </body>
 
