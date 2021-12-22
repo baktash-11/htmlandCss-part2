@@ -116,10 +116,15 @@ table{
 .first{
     text-align: left;
     width: 25%;
+    
 }
 
 td:first-child{
     text-align: left;
+    /* color: hotpink; */
+    text-transform: uppercase;
+    font-weight: bold;
+    
 }
 
 th{
