@@ -4,42 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/two-column-layout.css">
+    <link rel="stylesheet" href="./css/new-flex.css">
+    <title>Typeface</title>
     <style>
-       @font-face {
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            
+        }
+        h1, h2{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .credits{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="main-body">
+            <h1 class="main-heading">Examples</h1><br>
+            <h1 class="secondary-heading">MORE FONT CHOICE</h1>
+            <h2 class="secondary-heading">@font-face</h2>
+            <!-- dispay css  -->
+    <pre class="line-numbers ">
+    <code class="language-css">
+    &lt;style>
+        @font-face {
             font-family: "Roboto";
             src: url('./assets/Roboto/Roboto-Regular.ttf');
-        
+                                
         }
         h1, h2 {
             font-family: Roboto, Georgia, 'Times New Roman', Times, serif;
         }
-    </style>
-    
-    <link rel="stylesheet" href="./css/two-column-layout.css">
-    <title>More font Choice</title>
-</head>
-<body>
-    <h1 class="secondary-heading">MORE FONT CHOICE</h1>
-    <h2 class="secondary-heading">@font-face</h2>
-    <br>
-    <div class="row">
-
-        <div class="main-bdoy">
-
-        <pre class="line-numbers">
-        <code class="language-css">
-            &lt;style>
-                 @font-face {
-                     font-family: "Roboto";
-                     src: url('./assets/Roboto/Roboto-Regular.ttf');
-                         
-                 }
-                h1, h2 {
-                    font-family: Roboto, Georgia, 'Times New Roman', Times, serif;
-                 }
-                     &lt;/style>
-                </code>
-            </pre>
+        &lt;/style>
+        </code>
+        </pre><br>
+            
             <h1>Briard</h1>
             <p>by Ivy Duckett</p><br>
             <p>The briard, or berger de brie, is a large dog traditionally used as herder and guardian of sheep. </p><br>
@@ -47,8 +52,8 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus vitae quia doloremque eveniet sapiente illum earum hic in ratione expedita harum voluptatum animi culpa sunt voluptate, accusantium tenetur atque provident! Commodi iusto modi a error dolores esse assumenda, saepe consectetur laborum illo architecto itaque exercitationem nesciunt, officia odit deleniti eum.</p>
 
         </div>
-
         <div class="notes">
+            <h1 class="main-heading">Notes</h1>
             <div class="cell-1">
                 <p>
                     @font-face allows you to use
@@ -62,12 +67,7 @@
             </div>
             <div class="cell-2">
                 <p>
-                    Because this technique allows
-                    a version of the font to be
-                    downloaded to the user's
-                    computer, it is important that the
-                    license for the font permits it to
-                    be used in this way
+                    Because this technique allows  a version of the font to be  downloaded to the user's  computer, it is important  that the  license for the font permits it to  be used in this way.
                 </p>
             </div>
             <div class="cell-1">
@@ -75,20 +75,46 @@
                     You add the font to your Style sheet using the @font-face rule, as shown on the right.
                 </p>
             </div>
-            <div class="cell-2">
 
+            <div class="cell-2">
+                <h2 class="secondary-heading">font-family  </h2>
+                <p>This specifies the name of the font. This name can than be used as a value of the font-family property in the rest of the style sheet (as shown in the rule for the &lt;h1> and &lt;h2> elements.)</p>
             </div>
-            <div class="cell-3">
-                <p>
-                   
-                </p>
-            </div>
+           
         </div>
     </div>
-    <h1 class="main-heading"></h1>
-    <h2 class="secondary-heading"></h2>
-</body>
+    <div class="flex-container">
+        <div class="flex-item-1 item">
+            <h2 class="secondary-heading"> SRC </h2>
+            <p>
+                This specifies the path to the font. In order for this technique to work in all browsers, you will probably need to specify path to a few diffrent version of the font as shown on the next page.
+            </p>
+
+        </div>
+        <div class="flex-item-2 item">
+            <h2 class="secondary-heading"> format  </h2>
+            <p>
+                This specifies the path to the font. In order for this technique to work in all browsers, you will probably need to specify path to a few diffrent version of the font as shown on the next page.
+            </p>
+
+        </div>
+        <div class="flex-item-3 item">
+            <h2 class="secondary-heading "> format  </h2>
+            <p>
+                This specifies the path to the font. In order for this technique to work in all browsers, you will probably need to specify path to a few diffrent version of the font as shown on the next page.
+            </p>
+
+
+        </div>
+        
+    </div>
+
+    <br>
     <a href="./index.html" class="link">Home</a>
     <a href="./font-scale.html" class="link">Back</a>
     <a href="./typeface.html" class="link">Type Face</a>
+    <a href="./understanding-font-fontmats.html" class="link">font format</a>
+  
+    
+</body>
 </html>

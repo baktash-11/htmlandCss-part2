@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/two-column-layout.css">
+    <link rel="stylesheet" href="./css/new-flex.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class="main-heading">Understanding Font Formats</h1>
+    <div class="main-two-c-container">
+        <div class="main-body-2">
+            
+            <!-- display code (css) -->
+            <pre class="line-numbers code">
+                <code class="language-css ">
+                    @font-face {
+                        font-family: 'ChunkFiveRegular';
+                        src: url('fonts/chunkfive.eot');
+                        src: url('fonts/chunkfive.eot?#iefix')
+                        format('embedded-opentype'),
+                        url('fonts/chunkfive.woff') format('woff'),
+                        url('fonts/chunkfive.ttf')
+                        format('truetype'),
+                        url('fonts/chunkfive.svg#ChunkFiveRegular')
+                        format('svg');}
+                
+                </code>
+             </pre><br>
+
+             
+             <br>
+             <table>
+                 <tr>
+                     <th class="table-headding first">BROWSER</th>
+                     <th colspan="4" class="table-headding " >FORMAT </th>
+                </tr>
+                <tr>
+                     <th >&nbsp;</th>
+                     <th>eot</th>
+                     <th>woff</th>
+                     <th>ttf/otf</th>
+                     <th>svg</th>
+                </tr>
+                <tr>
+                     <td class="first-row">Crhoome(All)</td>
+                     <td class="first-row">&nbsp;</td>
+                     <td class="first-row">&nbsp;</td>
+                     <td class="first-row">&nbsp;</td>
+                     <td class="first-row">&nbsp;<div class="dot"></div></td>
+                </tr>
+                <tr>
+                    <td>Crhoome 6+</td>
+                    <td>&nbsp;</td>
+                    <td><div class="dot"></div></td>
+                    <td><div class="dot"></div></td>
+                    <td><div class="dot"></div></td>
+                </tr>
+                <tr>
+                    <td>Firefox 3.5</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td><div class="dot"></div></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Firefox 3.6+</td>
+                    <td>&nbsp;</td>
+                    <td><div class="dot"></div></td>
+                    <td><div class="dot"></div></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>IE 5-8</td>
+                    <td><div class="dot"></div></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>IE 9+</td>
+                    <td><div class="dot"></div></td>
+                    <td><div class="dot"></div></td>
+                    <td><div class="dot"></div></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Opera 10+</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td><div class="dot"></div></td>
+                    <td><div class="dot"></div></td>
+                    
+                </tr>
+                <tr>
+                    <td>Savari 3.1+</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td><div class="dot"></div></td>
+                    <td><div class="dot"></div></td>
+                    
+                </tr>
+                <tr>
+                    <td>iOS &lt; 4.2+</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td><div class="dot"></div></td>
+                    
+                </tr>
+                <tr>
+                    <td>iOS 4.2+</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td><div class="dot"></div></td>
+                    <td><div class="dot"></div></td>
+                    
+                </tr>
+
+            </table>
+        </div>
+        <div class="note-1 left">
+            <div class="item">
+                <p>Different browsers support different formats for fonts (in the same way that they  support different audio and video formats), so you will need to supply the font in several variations to reach all browsers.</p>
+            </div>
+            <div class="item">
+                <p>
+                    If you do not have all of these formats for your font, you can upload the font to a website called FontSquirrel where they will convert it for you: 
+                </p>
+                <br>
+                <p>
+                    www.fontsquirrel.com/ fontface/generator
+                </p>
+            </div>
+
+            <div class="item">
+                <p>
+                    Font Squirrel also provides you with the CSS code for the @font-face rule. This is very helpful because, when you are dealing with multiple font formats, the src and format properties of the @font-face rule can get rather  complicated.
+                </p>
+               
+            </div>
+            <div class="item">
+                <p> 
+                    You can see an example of amore complicated @font-face rule on the left.
+
+                </p><br>
+                <p>
+                    The various font formats shouldappear in your code in this order:
+                </p>
+            </div>
+            <ol>
+                <li><div class="table-headding">eot</div></li>
+                <li><div class="table-headding">woff</div></li>
+                <li><div class="table-headding">ttf/otf</div></li>
+                <li><div class="table-headding">svg</div></li>
+                
+            </ol>
+
+            <div class="item end-notes">
+                <p>
+                    Because the browser needs to download the font file  to show it, users might see something known as a Flash of Unstyled Content (FOUC) or Flash of Unstyled Text (FOUT). Two things you can do to try to minimize this behavior are to  delete any unneccesary glyphs from the font and/or host the font on a Content Delivery  Network (a special type of web hosting that offers faster delivery  of files)
+                
+                </p>
+            </div>
+
+        </div>
+
+    
+
+    </div>
+    
+
+
+    <br>
+    <a href="./index.html" class="link">Home</a>
+    <a href="./font-scale.html" class="link">Back</a>
+    <a href="./typeface.html" class="link">Type Face</a>
+    <a href="./understanding-font-fontmats.html" class="link">font format</a>
+    
+</body>
+
+</html>

@@ -30,27 +30,26 @@ body{
 
 .row{
     display: flex;
-    justify-content: space-between;
-    
-   
+    flex-wrap: wrap;
 
 }
 
 .main-body{
     
     /* background-color: var(--main-background-color); */
-    width: 50%;
+    flex: 1 0 250px;
 
     
 }
 .notes{
     /* float: 50%; */
+    flex: 1 0 250px;
+  
+}
+.notes{
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin-left: 2%;
     color: var(--main-text-color);
-    width:100%;
-   
-  
 }
 .cell-1{
     background:var(--gradient-background-1);
@@ -93,6 +92,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     padding: 20px;
+    text-transform: uppercase;
 }
 
 .secondary-heading{

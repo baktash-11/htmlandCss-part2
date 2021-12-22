@@ -1,0 +1,151 @@
+:root{
+   
+    --secondary-text-color: #2e94b9; 
+    --main-text-color: #475053; 
+    --dark-background: #acdcee; 
+    --light-background: #f0fbff;
+    --main-background-color: #f1f1f1;
+    --gradient-background-1:radial-gradient(circle at 10% 20%, rgb(239, 246, 249) 0%, rgb(206, 239, 253) 90%);
+    --gradient-background-2:radial-gradient(circle at 10% 20%, rgb(206, 239, 253) 0%, rgb(239, 246, 249) 90%);
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.flex-item-1{
+    flex: 1 0 300px;
+    
+}
+
+.flex-item-2{
+    flex: 1 0 300px;
+    
+}
+
+.flex-item-3{
+    flex: 1 0 300px;
+    
+}
+.item{
+    background: var(--gradient-background-1);
+    margin: 10px 0px;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 10px;
+    padding: 30px;
+    color: var(--main-text-color);
+
+    word-spacing: .5em;
+}
+.flex-item-2 {
+    margin: 10px 15px;
+}
+
+@media  (max-width: 1591px){
+    .flex-item-2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 0px;
+        
+    }
+    .item, .line-numbers{
+        background: var(--main-text-color);
+        color: var(--dark-background);
+        border: 1px solid var(--secondary-text-color);
+        border-radius: 10px;
+    }
+}
+
+
+/* two column fomrat */
+
+.main-two-c-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-body-2{
+    flex: 2 0 450px;
+}
+
+.note-1{
+    flex: 1 0 350px;
+}
+.note-1.left{
+    padding-left: 10px;
+    margin-left: 15px;
+    /* background: gray; */
+}
+
+/* red dot */
+
+.dot{
+    width: 15px;
+    height: 15px;
+    /* background: pink; */
+    border-radius: 50%;
+    border: 8px solid hotpink;
+    display: inline-block;
+    
+
+}
+.code{
+    background: var(--main-text-color);
+    color: var(--dark-background);
+    line-height: 2em;
+}
+
+/* table's style */
+table{
+    width: 100%;
+    font-size: 20px;
+
+}
+
+.table-headding{
+    font-size: 30px;
+    color:hotpink;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0;
+    letter-spacing: 0.2em;
+}
+.first{
+    text-align: left;
+    width: 25%;
+}
+
+td:first-child{
+    text-align: left;
+}
+
+th{
+    border-top: 2px solid var(--main-text-color);
+    padding: 10px;
+    color: var(--secondary-text-color);
+}
+td{
+    border-bottom: 2px dotted gray;
+    padding: 10px;
+    text-align: center;
+    
+}
+.first-row{
+    border-top: 2px dotted gray;
+}
+/* end of table style  */
+
+ol{
+    margin-left: 50px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.item.end-notes{
+    background:var(--main-background-color);
+    color: var(--secondary-text-color);
+    border: none;
+    line-height: 1.5em;
+}
